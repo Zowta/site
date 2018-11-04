@@ -1,20 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass');
 
-body 
+* {
+ box-sizing: border-box;
+}
+
+*:before,
+*:after 
 {
-	margin:0px;
+ box-sizing: border-box;
+}
+
+html,
+body {
+ height: 100%;
+ position: relative;
+ margin:0;
 }
 
 .grid-container
 {
 	display: grid;
-	height: 100%;
+	min-height: 100vh; /* will cover the 100% of viewport */
+	overflow: hidden;
+	display: block;
+	position: relative;
+	padding-bottom: 20px; /* height of your footer */
 }
 
 .header 
 { 
 	/*background-color:#e09085;  Rose Gold*/
-	height: 160px;
+	height: 148px;
 	background-color:white;
 }
 
@@ -162,18 +178,12 @@ body
   background: #000;
 }
 
-#centerAnim
-{
-	animation-duration:3s;
-}
-
 .center
 { 
-	width:100%;
+	min-width:100%;
 	min-height:100%;
     margin: auto;
 	font-family:Overpass;
-	
 }
 
 .center p
@@ -182,11 +192,17 @@ body
 	padding: 0px 50px 0px 50px;
 }
 
+#centerAnim
+{
+	animation-duration:3s;
+}
+
 .imageCenter
 {
+	background-color:red;
 	overflow:hidden;
 	pointer-events: none;
-	height:220px;
+	height:180px;
 	background: url(images/cross.jpg) center center no-repeat ;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -194,7 +210,6 @@ body
 	-o-background-size: cover;
 	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); /* Causes image to transition to opacity 0 */
 }
-
 
 
 .grid-container2 {
@@ -264,17 +279,15 @@ body
 	animation-duration:8s;
 }
 
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0.5rem;
-  background-color: #fff;
-  font-size: 12px;
-  font-family: Overpass;
-  text-align: center;
-  border-top: 2px solid black;
+
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ 
+ border-top: 2px solid #eee;
+ font-family:Overpass;
+ text-align:center;
 }
 
 .sticky { /* becomes added onto the center div via JScript */
