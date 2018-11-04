@@ -192,6 +192,8 @@ body {
 	padding: 0px 50px 0px 50px;
 }
 
+
+
 #centerAnim
 {
 	animation-duration:3s;
@@ -211,46 +213,188 @@ body {
 	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); /* Causes image to transition to opacity 0 */
 }
 
+#textLink1
+{
+	color:black;
+	
+}
 
-.grid-container2 {
+.centerText
+{
+	position:relative;
+	width:48%;
+	padding-top:50px;
+}
+
+.imageAbout
+{
+	position:relative;
+	border-radius: 25px;
+	border: 2px solid black;
+	display:block;
+		
+	height: 400px;
+	width:48%;
+	
+	bottom:280px;  /* This raises the DIV by 300 pixels and then the CSS below removes 300 pixels of margin. */
+	left: 950px;
+	margin-bottom:-280px; /*This removes the empty space below. */
+
+	background:url(images/17.jpg);
+	background-size: 100% 100% ; /* Makes the selected image fill 100% of the div via Background Image CSS */
+}
+
+ 
+
+.grid-container2 {	/* Grid on Pattern Page */
+	position:relative;
+	padding-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+	display: grid;
+	max-width:90%;
+	grid-column-gap: 10px;
+	grid-template-columns: auto auto auto auto auto;
+}
+
+.grid-container3 { /* Grid on Pattern Page */
 	position:relative;
 	padding-top:50px;
 	margin-left:auto;
 	margin-right:auto;
 	display: grid;
 	max-width:90%;
-	grid-column-gap: 10px;
-	grid-template-columns: auto auto auto auto auto;
+	grid-column-gap: 200px;
+	grid-template-columns: auto auto;
 }
+
+.grid-container4 {    /* Grid on ART Page */
+	position:relative;
+	padding-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	display: grid;
+	max-width:90%;
+	grid-column-gap: 150px;
+	grid-template-columns: auto auto auto;
+}
+
+.grid-container5 {    /* 2nd Grid on ART Page */
+	position:relative;
+	padding-top:50px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+	display: grid;
+	max-width:90%;
+	grid-column-gap: 150px;
+	grid-template-columns: auto auto auto;
+}
+
+
+.grid3-item1 {
+	max-width:100%;
+	height:300px;
+	border-radius: 25px;
+	background:url(images/18.jpg);
+	background-size: 100% 100% ;
+}
+.grid3-item2 {
+	border-radius: 25px;
+	background:url(images/19.jpg);
+	background-size: 100% 100% ;
+}
+
 .grid-item1 {
 	max-width:100%;
 	height:240px;
 	border-radius: 25px;
-	background:url(images/1.jpg);
+	background:url(images/3.jpg);
 	background-size: 100% 100% ;
 }
-
 .grid-item2 {
+	border-radius: 25px;
+	background:url(images/4.jpg);
+	background-size: 100% 100% ;
+}
+.grid-item3 {
 	border-radius: 25px;
 	background:url(images/2.jpg);
 	background-size: 100% 100% ;
 }
-
-.grid-item3 {
+.grid-item4 {
 	border-radius: 25px;
-	background:url(images/3.jpg);
+	background:url(images/1.jpg);
 	background-size: 100% 100% ;
 }
-
-.grid-item4 {
+.grid-item5 {
 	border-radius: 25px;
 	background:url(images/5.jpg);
 	background-size: 100% 100% ;
 }
 
-.grid-item5 {
+.grid2-item1 {
+	max-width:100%;
+	height:240px;
 	border-radius: 25px;
-	background:url(images/4.jpg);
+	background:url(images/6.jpg);
+	background-size: 100% 100% ;
+}
+.grid2-item2 {
+	border-radius: 25px;
+	background:url(images/7.jpg);
+	background-size: 100% 100% ;
+}
+.grid2-item3 {
+	border-radius: 25px;
+	background:url(images/8.jpg);
+	background-size: 100% 100% ;
+}
+.grid2-item4 {
+	border-radius: 25px;
+	background:url(images/9.jpg);
+	background-size: 100% 100% ;
+}
+.grid2-item5 {
+	border-radius: 25px;
+	background:url(images/10.jpg);
+	background-size: 100% 100% ;
+}
+
+.grid4-item1 {
+	max-width:100%;     /* Grid on ART Page */
+	height:300px;
+	border-radius: 25px;
+	background:url(paintings/15.jpg);
+	background-size: 100% 100% ;
+}
+.grid4-item2 {
+	border-radius: 25px;
+	background:url(paintings/18.jpg);
+	background-size: 100% 100% ;
+}
+.grid4-item3 {
+	border-radius: 25px;
+	background:url(paintings/19.jpg);
+	background-size: 100% 100% ;
+}
+
+.grid5-item1 {
+	max-width:100%;     /* Grid on ART Page */
+	height:300px;
+	border-radius: 25px;
+	background:url(paintings/14.jpg);
+	background-size: 100% 100% ;
+}
+.grid5-item2 {
+	border-radius: 25px;
+	background:url(paintings/16.jpg);
+	background-size: 100% 100% ;
+}
+.grid5-item3 {
+	border-radius: 25px;
+	background:url(paintings/17.jpg);
 	background-size: 100% 100% ;
 }
 
@@ -258,22 +402,18 @@ body {
 {
 	animation-duration:5s;
 }
-
 #grid2
 {
 	animation-duration:6s;
 }
-
 #grid3
 {
 	animation-duration:7s;
 }
-
 #grid4
 {
 	animation-duration:8s;
 }
-
 #grid5
 {
 	animation-duration:8s;
@@ -289,6 +429,135 @@ footer {
  font-family:Overpass;
  text-align:center;
 }
+
+.contact-form
+{
+	position:relative;
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:50px;
+}
+
+#contact{
+    padding:10px 0 10px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+
+/* Input Styles */
+
+  .form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border:1px solid rgba(0, 0, 0, 0.075);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+  }
+
+  .form:hover{
+    border:1px solid #8BC3A3;
+  }
+
+  .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #8BC3A3;
+  }
+
+  .textarea{
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+  }
+  
+/* Generic Button Styles */
+
+  .button{
+    padding:8px 12px;
+    background:#0A5175;
+    display: block;
+    width:120px;
+    margin:10px 0 0px 0;
+    border-radius:3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align:center;
+    font-size:0.8em;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .button:hover{
+    background:#8BC3A3;
+    color:white;
+  }
+
+/* Send Button Styles */
+
+  .form-btn{
+    width:180px;
+    display: block;
+    height: auto;
+    padding:15px;
+    color:#fff;
+    background:#000;
+    border:none;
+    border-radius:3px;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin:auto;
+    box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+    -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  }
+
+  .form-btn:hover{
+    background:#111;
+    color: white;
+    border:none;
+  }
+
+  .form-btn:active{
+    opacity: 0.9;
+  }
 
 .sticky { /* becomes added onto the center div via JScript */
   position: fixed;
