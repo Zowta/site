@@ -237,7 +237,7 @@ body {
 	width:48%;
 	
 	bottom:280px;  /* This raises the DIV by 300 pixels and then the CSS below removes 300 pixels of margin. */
-	left: 950px;
+	left: 50%;
 	margin-bottom:-280px; /*This removes the empty space below. */
 
 	background:url(images/17.jpg);
