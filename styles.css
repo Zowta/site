@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Overpass');
 
+
+/* MOBILE CSS LOCATED AT BOTTOM OF CSS SHEET */
+
 * {
  box-sizing: border-box;
 }
@@ -186,13 +189,6 @@ body {
 	font-family:Overpass;
 }
 
-.center p
-{
-	text-align:center;
-	padding: 0px 50px 0px 50px;
-}
-
-
 
 #centerAnim
 {
@@ -202,7 +198,6 @@ body {
 .imageCenter
 {
 	background-color:red;
-	overflow:hidden;
 	pointer-events: none;
 	height:180px;
 	background: url(images/cross.jpg) center center no-repeat ;
@@ -223,15 +218,17 @@ body {
 {
 	position:relative;
 	width:48%;
-	padding-top:50px;
+	padding-top:20px;
 }
+
+
 
 .imageAbout
 {
 	position:relative;
 	border-radius: 25px;
 	border: 2px solid black;
-	display:block;
+
 		
 	height: 400px;
 	width:48%;
@@ -244,7 +241,44 @@ body {
 	background-size: 100% 100% ; /* Makes the selected image fill 100% of the div via Background Image CSS */
 }
 
+#indexCenterText
+			{
+				padding: 0px 140px 0px 140px;
+				text-align:center;
+				font-size:20px;
+			}
+
+#aboutCenterText
+			{
+				padding: 0px 140px 0px 140px;
+				text-align:center;
+				font-size:20px;
+			}
+
+#patternsCenterText
+			{
+				padding: 0px 140px 0px 140px;
+				text-align:center;
+				font-size:20px;
+			}
+			
+#artCenterText
+			{
+				padding: 0px 140px 0px 140px;
+				text-align:center;
+				font-size:20px;
+			}
+			
+#contactCenterText
+			{
+				padding: 0px 140px 0px 140px;
+				text-align:center;
+				font-size:20px;
+			}
+
  
+ 
+ /* ALL GRID ON PHOTO/ART PAGE */
 
 .grid-container2 {	/* Grid on Pattern Page */
 	position:relative;
@@ -419,12 +453,12 @@ body {
 	animation-duration:8s;
 }
 
+/* END OF ALL GRID CODE */
 
 footer {
  position: absolute;
  bottom: 0;
  width: 100%;
- 
  border-top: 2px solid #eee;
  font-family:Overpass;
  text-align:center;
@@ -571,4 +605,91 @@ footer {
   padding-top: 60px;
 }
 
+@media screen and (max-width: 1000px) { /* What this query really means, is “If [device width] is less than or equal to 1000px, then do {…}” */
+
+            .centerText {
+				position:relative;
+				margin-left:auto;
+				margin-right:auto;
+				font-size:20px;
+				width:90%;
+            }
+			
+			.aboutCenterText p
+			{
+				font-size:13px;
+			}
+			
+			.imageAbout 
+			{
+				position:relative;
+				margin-left:auto;
+				margin-right:auto;
+				left:0;
+				bottom:0;
+				padding-top:20px;
+				margin-bottom:0;
+				width:80%;				
+			}
+			
+#indexCenterText
+			{
+				padding: 0px 30px 0px 30px;
+			}
+
+#aboutCenterText
+			{
+				padding: 0px 30px 0px 30px;
+				font-size:15px;
+			}
+
+#patternsCenterText
+			{
+				padding: 0px 30px 0px 30px;
+			}
+			
+#artCenterText
+			{
+				padding: 0px 30px 0px 30px;
+			}
+			
+#contactCenterText
+			{
+				padding: 0px 30px 0px 30px;
+			}
+			
+			.grid-container3 { /* Grid on Pattern Page */
+				position:relative;
+				padding-top:50px;
+				margin-left:auto;
+				margin-right:auto;
+				display: grid;
+				max-width:90%;
+				grid-column-gap: 80px;
+				grid-template-columns: auto auto;
+			}
+
+			.grid-container4 {    /* Grid on ART Page */
+				position:relative;
+				padding-top:50px;
+				margin-left:auto;
+				margin-right:auto;
+				display: grid;
+				max-width:90%;
+				grid-column-gap: 20px;
+				grid-template-columns: auto auto auto;
+			}
+
+			.grid-container5 {    /* 2nd Grid on ART Page */
+				position:relative;
+				padding-top:50px;
+				margin-left:auto;
+				margin-right:auto;
+				padding-bottom:50px;
+				display: grid;
+				max-width:90%;
+				grid-column-gap: 20px;
+				grid-template-columns: auto auto auto;
+			}
+ }
 
